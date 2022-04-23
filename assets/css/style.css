@@ -1,8 +1,9 @@
 :root{
   --border-radius: 10px;
-  --color-dark: #ababab;
+  --color-dark: #b2b1b1;
   --color-norm: #ececec;
   --color-light:#f3f3f3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
   table{
@@ -16,33 +17,42 @@ th,
 td{
   background-color:#7887ab;
   padding: 10px;
+  font-size: 0.8em;
 }
 thead{
   color: var(--color-light);
 }
+
+thead p:nth-child(2){
+  padding-top: 1em;
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
  thead th:first-child{
    border-top-left-radius: var(--border-radius);
    background-color:#7887ab;
+  }
+  thead th:nth-child(3){
+    background-color: #3c4e81;
+  }
+  thead th:nth-child(4){
+    background-color:#254284;
   }
 
   thead th:last-child{
     border-top-right-radius: var(--border-radius);
     background-color:#061539;
   }
-  thead th:last-child{
-    background-color:#061539;
-  }
+
   thead th:nth-child(2){
     background-color:#4f628e;
   }
+  thead p:nth-child(2){
+    font-size: 2 em;
+  }
 
-  tfoot th:first-child{
-    border-bottom-left-radius: var(--border-radius);
-   }
-
-   tfoot th:last-child{
-     border-bottom-right-radius: var(--border-radius);
-   }
+  
    tbody tr:nth-child(odd) td:nth-child(odd),
    tfoot th:nth-child(odd){
      background-color: var(--color-dark);
@@ -63,6 +73,19 @@ thead{
   tbody td:first-child{
     padding-left: 2,5em;
   }
+  tfoot th:first-child{
+    border-bottom-left-radius: var(--border-radius);
+   }
+
+   tfoot th:last-child{
+     border-bottom-right-radius: var(--border-radius);
+   }
+   tfoot button{
+     padding: 0.5em 1.5em;
+     background-color:#ababab;
+     border-style: groove;
+   }
+   
 
 
      
